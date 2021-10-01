@@ -16,5 +16,8 @@ function convertToTime(num){
     if(hours == 0 && mins == 1 || hours > 1 && mins == 1){
         console.log(hours + " hours, " + mins + " minute.")
     }
+    if(hours == 1 && mins == 1){
+        console.log(hours + " hour, " + mins + " minute.")
+    }
 }
-convertToTime(121);
+convertToTime(61);
