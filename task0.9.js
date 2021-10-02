@@ -1,11 +1,11 @@
 function findVowel(word){
-    const vowel = ['a','e','i','o','u','A','E','I','O','U'];
+    const vowel = ['a','e','i','o','u'];
     var letter = [];
     for(var i = 0; i < word.length; i++){
-        if(word.toUpperCase().match(vowel[i]) || word.toLowerCase().match(vowel[i])){
+        if(word.toUpperCase().includes(vowel[i]) || word.toLowerCase().includes(vowel[i])){
             letter.push(vowel[i]);
         }
     }
-    console.log("Vowels: " + letter);
+    console.log("Vowels: " + letter + ".");
 }
-findVowel("TUMELO");
+findVowel("tumelooo");
