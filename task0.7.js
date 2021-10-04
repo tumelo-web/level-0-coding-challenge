@@ -8,4 +8,4 @@ function convertToCelsius(temp){
     temp = (temp - 32) * 5/9;
     return temp;
 }
-console.log(convertToCelsius(80));
+console.log(convertToCelsius(81));
