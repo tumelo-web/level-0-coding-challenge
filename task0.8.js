@@ -10,14 +10,15 @@ function convertToTime(num){
     if(hours == 0 && mins > 1){
         console.log(hours + " hours, " + mins + " minutes.")
     }
-    if(hours == 1 && mins >= 0){
-        console.log(hours + " hour, " + mins + " minutes.")
-    }
     if(hours == 0 && mins == 1 || hours > 1 && mins == 1){
         console.log(hours + " hours, " + mins + " minute.")
     }
     if(hours == 1 && mins == 1){
         console.log(hours + " hour, " + mins + " minute.")
+    }else{
+        if(hours == 1 && mins >= 0){
+            console.log(hours + " hour, " + mins + " minutes.")
+        }
     }
 }
 convertToTime(61);
